@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/daily/:date", "destination": "/daily/:date/index.html" }
+  ],
+  "trailingSlash": true
+}
