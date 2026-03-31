@@ -19,4 +19,4 @@ npm run build
 ## Structure
 - `/pages` - Next.js pages
 - `/public/images` - Static assets
-- `/styles` - CSS files
+- `/styles` - CSS files# Daily News
