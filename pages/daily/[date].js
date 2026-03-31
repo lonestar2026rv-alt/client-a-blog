@@ -1,6 +1,23 @@
 import Head from 'next/head';
 
-export default function DailyNews() {
+export async function getStaticPaths() {
+  return {
+    paths: [
+      { params: { date: '2026-03-31' } }
+    ],
+    fallback: false
+  };
+}
+
+export async function getStaticProps({ params }) {
+  return {
+    props: {
+      date: params.date
+    }
+  };
+}
+
+export default function DailyNews({ date }) {
   return (
     <>
       <Head>
